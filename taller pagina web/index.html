@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Tu tienda de videojuegos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff5722;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ff5722;
+        }
+
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            margin: 10px 0;
+            color: #ff5722;
+        }
+
+        .game-card p {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .game-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4caf50;
+        }
+
+        .cta-button {
+            background-color: #ff5722;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>GameZone</h1>
+        <p>¡Los mejores videojuegos al mejor precio!</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#destacados">Juegos Destacados</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Sección de juegos destacados -->
+        <section id="destacados">
+            <h2>Juegos Destacados</h2>
+            <div class="game-list">
+                <!-- Tarjeta de juego 1 -->
+                <div class="game-card">
+                    <img src="C:\Users\labinf1.pasto\Downloads\imagenesjuegos\super_adventure_quest.jpg" alt="Super Adventure Quest">
+                    <h3>Super Adventure Quest</h3>
+                    <p>Embárcate en una épica aventura llena de acción y misterio. ¡Explora mundos increíbles y derrota a tus enemigos!</p>
+                    <p class="price">$29.99</p>
+                    <button class="cta-button">Comprar ahora</button>
+                </div>
+
+                <!-- Tarjeta de juego 2 -->
+                <div class="game-card">
+                    <img src="C:\Users\labinf1.pasto\Downloads\imagenesjuegos\galactic_battle_royale.jpg" alt="Galactic Battle Royale">
+                    <h3>Galactic Battle Royale</h3>
+                    <p>Únete a la batalla más grande del universo. Sobrevive, lucha y conviértete en el último campeón.</p>
+                    <p class="price">$39.99</p>
+                    <button class="cta-button">Comprar ahora</button>
+                </div>
+
+                <!-- Tarjeta de juego 3 -->
+                <div class="game-card">
+                    <img src="C:\Users\labinf1.pasto\Downloads\imagenesjuegos\mystery_dungeon.jpg" alt="Mystery Dungeon">
+                    <h3>Mystery Dungeon</h3>
+                    <p>Explora mazmorras llenas de secretos y desafíos. ¿Tienes lo que se necesita para sobrevivir?</p>
+                    <p class="price">$24.99</p>
+                    <button class="cta-button">Comprar ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de novedades -->
+        <section id="novedades">
+            <h2>Novedades</h2>
+            <p>Próximamente: ¡Nuevos juegos emocionantes que no te puedes perder!</p>
+        </section>
+
+        <!-- Sección de ofertas -->
+        <section id="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <p>¡Aprovecha nuestras ofertas exclusivas y lleva tus juegos favoritos a un precio increíble!</p>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>© 2023 GameZone. Todos los derechos reservados.</p>
+        <p>Contacto: info@gamezone.com | Síguenos en redes sociales</p>
+    </footer>
+
+</body>
+</html>
